@@ -17,7 +17,7 @@ namespace shipmenttracking
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
             lst = FindViewById<ListView>(Resource.Id.list_view);
-            lst.Adapter = new ShipAdapter(this,);
+            lst.Adapter = new ShipAdapter(this,Helper.shipItem);
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
@@ -28,11 +28,12 @@ namespace shipmenttracking
         {
             if(item.ItemId==Resource.Id.action_add)
             {
+                // add item
 
             }
             if(item.ItemId == Resource.Id.action_quit)
             {
-
+                Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
             }
             return true;
         }

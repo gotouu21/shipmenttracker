@@ -55,6 +55,7 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="oneItem.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
