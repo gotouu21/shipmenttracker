@@ -55,6 +55,9 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiHelper.cs" />
+    <Compile Include="Api\Class1.cs" />
+    <Compile Include="Api\Program.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="oneItem.cs" />

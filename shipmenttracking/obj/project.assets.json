@@ -445,20 +445,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\gotou\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\shipmenttracking\\shipmenttracking\\shipmenttracking.csproj",
+      "projectUniqueName": "C:\\Users\\gotou\\Desktop\\shipmenttracker\\shipmenttracking\\shipmenttracking.csproj",
       "projectName": "shipmenttracking",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\shipmenttracking\\shipmenttracking\\shipmenttracking.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\shipmenttracking\\shipmenttracking\\obj\\",
+      "projectPath": "C:\\Users\\gotou\\Desktop\\shipmenttracker\\shipmenttracking\\shipmenttracking.csproj",
+      "packagesPath": "C:\\Users\\gotou\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gotou\\Desktop\\shipmenttracker\\shipmenttracking\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gotou\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

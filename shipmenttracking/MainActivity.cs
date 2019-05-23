@@ -29,10 +29,13 @@ namespace shipmenttracking
             if(item.ItemId==Resource.Id.action_add)
             {
                 // add item
+                // pop up menu
+                Helper.addItem();
 
             }
             if(item.ItemId == Resource.Id.action_quit)
             {
+                Helper.saveItems();
                 Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
             }
             return true;

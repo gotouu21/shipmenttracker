@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -12,14 +13,39 @@ using Android.Widget;
 
 namespace shipmenttracking
 {
-    class Helper
+    public class Helper
     {
         internal static List<oneItem> shipItem;
+        string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+        string datapath = Path.Combine(path, "data.xml");
+
+        public void mockItems()
+        {
+
+        }
+
         public void getItems()
         {
             shipItem = new List<oneItem>();
-            // get all items from data
+            var streamReader = new StreamReader(path);
+            shipItem = File.ReadAllLines(path).ToList();
+            StreamReader.close();
+
             return;
+        }
+        public void saveItems()
+        {
+            StreamWriter stream = File.CreateText(path);
+            for(int i=0;i<shipItem.Count; i++)
+            {
+                stream.Write(i.ToString(), " ", shipItem[i].ToString());
+            }
+            stream.Close();
+            return;
+        }
+        public void addItem()
+        {
+
         }
     }
 }
